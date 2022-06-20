@@ -1,0 +1,97 @@
+*{
+  font-family:微軟正黑體;
+  letter-spacing: 2px;
+  font-weight:100;
+  color:#555;
+/*   border: solid 1px; */
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  margin:0px;
+  padding:0px;
+}
+
+.namecard{
+  width: 350px;
+  height: 200px;
+  margin:auto;
+  margin-top:200px;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  overflow:hidden;
+  box-shadow: 0px 0px 15px #999;
+  transition: 0.5s;
+}
+
+h3{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align:center;
+}
+
+h5{
+  color: red;
+}
+h2{
+  font-weight:800;
+  font-size:28px;
+}
+
+span{
+  font-size:11px;
+}
+
+p{
+  font-size:11px;
+  line-height:22px;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius:100%;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.circle1{
+  right:100px;
+  bottom:-90px;
+  color: red;
+  background-color: red;
+  transition: 0.5s;
+  
+}
+
+.circle2{
+  border: solid 4px;
+  width: 60px;
+  height: 60px;
+  right:-35px;
+  top: -35px;
+  color: red;
+}
+
+body{
+  border-top: 20px solid red ;
+  border-bottom: 20px solid red ;
+  box-sizing:border-box;
+  background-color: #eee;
+}
+
+.namecard:hover{
+  transform:translate(-10px,-10px);
+  box-shadow:10px 10px 30px #999;
+}
+
+.namecard:hover .circle1{
+  transform: translatey(-7px);
+}
+
+.namecard:hover .circle2{
+  transform: scale(1.3);
+}
